@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    font-family: monospace;
+    text-align: center;
+}
+body {
+    background-color: #d0d0ff;
+}
+
+.generator {
+    border: 2px solid black;
+    background-color: royalblue;
+    text-align: center;
+    width: 300px;
+    padding: 15px;
+    margin: 10px;
+    cursor: pointer;
+    user-select: none;
+    font-size: 1.2em;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.generator:hover {
+    background-color: deepskyblue;
+    transform: scale(1.05);
+}
+
+.generator.locked {
+    background-color: lightgray;
+    cursor: not-allowed;
+}
+
+.generator-container, .timegenerator-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    max-width: 1200px;
+}
+
+#points, #timespeed {
+    margin: 30px;
+    font-size: 3em;
+    text-align: center;
+    color: #333;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#note {
+    margin: 10px;
+    text-align: center;
+}
+#pointgen {
+    margin: 10px;
+    text-align: center;
+}
+#buymax {
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#prestige {
+    margin: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#prestige h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#prestige-points {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#prestige button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: royalblue;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#prestige button:hover {
+    background-color: deepskyblue;
+}

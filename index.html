@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incremental: Infinity</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="points">You have 0 points</div>
+    <div id="pointgen">(+1.00/s)</div>
+    <div class="generator" id="buymax" onclick="buyMax()"></div>
+    <div class="generator-container">
+        <div class="generator" id="gen1" onclick="buyGenerator(1)"></div>
+        <div class="generator" id="gen2" onclick="buyGenerator(2)"></div>
+        <div class="generator" id="gen3" onclick="buyGenerator(3)"></div>
+        <div class="generator" id="gen4" onclick="buyGenerator(4)"></div>
+        <div class="generator" id="gen5" onclick="buyGenerator(5)"></div>
+        <div class="generator" id="gen6" onclick="buyGenerator(6)"></div>
+        <div class="generator" id="gen7" onclick="buyGenerator(7)"></div>
+        <div class="generator" id="gen8" onclick="buyGenerator(8)"></div>
+        <div class="generator" id="gen9" onclick="buyGenerator(9)"></div>
+        <div class="generator" id="gen10" onclick="buyGenerator(10)"></div>
+        <div class="generator" id="gen11" onclick="buyGenerator(11)"></div>
+        <div class="generator" id="gen12" onclick="buyGenerator(12)"></div>
+        <div class="generator" id="gen13" onclick="buyGenerator(13)"></div>
+        <div class="generator" id="gen14" onclick="buyGenerator(14)"></div>
+        <div class="generator" id="gen15" onclick="buyGenerator(15)"></div>
+        <div class="generator" id="gen16" onclick="buyGenerator(16)"></div>
+        <div class="generator" id="gen17" onclick="buyGenerator(17)"></div>
+        <div class="generator" id="gen18" onclick="buyGenerator(18)"></div>
+        <div class="generator" id="gen19" onclick="buyGenerator(19)"></div>
+        <div class="generator" id="gen20" onclick="buyGenerator(20)"></div>
+    </div>
+    <div id="timespeed">Time is 1x faster</div>
+    <div id="note">(Note: Time Generators are not affected by timespeed)</div>
+    <div class="timegenerator-container">
+        <div class="generator" id="tgen1" onclick="buyTimeGenerator(1)"></div>
+        <div class="generator" id="tgen2" onclick="buyTimeGenerator(2)"></div>
+        <div class="generator" id="tgen3" onclick="buyTimeGenerator(3)"></div>
+        <div class="generator" id="tgen4" onclick="buyTimeGenerator(4)"></div>
+        <div class="generator" id="tgen5" onclick="buyTimeGenerator(5)"></div>
+        <div class="generator" id="tgen6" onclick="buyTimeGenerator(6)"></div>
+        <div class="generator" id="tgen7" onclick="buyTimeGenerator(7)"></div>
+        <div class="generator" id="tgen8" onclick="buyTimeGenerator(8)"></div>
+        <div class="generator" id="tgen9" onclick="buyTimeGenerator(9)"></div>
+        <div class="generator" id="tgen10" onclick="buyTimeGenerator(10)"></div>
+        <div class="generator" id="tgen11" onclick="buyTimeGenerator(11)"></div>
+        <div class="generator" id="tgen12" onclick="buyTimeGenerator(12)"></div>
+        <div class="generator" id="tgen13" onclick="buyTimeGenerator(13)"></div>
+        <div class="generator" id="tgen14" onclick="buyTimeGenerator(14)"></div>
+        <div class="generator" id="tgen15" onclick="buyTimeGenerator(15)"></div>
+        <div class="generator" id="tgen16" onclick="buyTimeGenerator(16)"></div>
+    </div>
+    <div id="prestige">
+        <h2>Prestige</h2>
+        <div id="prestige-points">Prestige Points: 0</div>
+        <button onclick="prestige()">Prestige</button>
+    </div>
+    <div id="settings">
+        <h2>Settings</h2>
+        <label>
+            <input type="checkbox" id="toggle-sound" checked>
+            Enable Sound Effects
+        </label>
+        <br>
+        <label>
+            Update Frequency:
+            <input type="number" id="update-frequency" value="50" min="10" step="10"> ms
+        </label>
+        <br>
+        <button onclick="resetGame()">HARD RESET</button>
+    </div>   
+</body>
+<script src="break_eternity.js"></script>
+<script src="main.js"></script>
+</html>
